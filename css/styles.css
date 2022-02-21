@@ -20,6 +20,9 @@ body {
     color: #E6EED6;
     height: 50px;
 
+    animation-name: navegacao;
+    animation-duration: 2s;
+
 }
 
 .navigation ul {
@@ -76,6 +79,9 @@ body {
 .profile-pic {
     width: 40%;
     text-align: center;
+
+    animation-name: profile-img;
+    animation-duration: 5s;
 }
 
 .profile-pic img {
@@ -89,7 +95,9 @@ body {
     vertical-align: top;
     width: 60%;
     margin-top: 130px;
-    
+
+    animation-name: titulo-home;
+    animation-duration: 2s;
 }
 
 .profile-title h1 {
@@ -110,6 +118,9 @@ body {
     font-size: 16px;
     font-weight: 100;
     padding: 50px 180px 50px 100px;
+
+    animation-name: conteudo;
+    animation-duration: 2s;
     
 }
 
@@ -234,4 +245,29 @@ body {
 
      color: #E6EED6;
      margin-top: 30px;
+}
+
+@keyframes profile-img {
+    0% {opacity: 0; transform: translate(0px,20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+
+}
+
+@keyframes titulo-home {
+    0% {opacity: 0; transform: translate(0px,-20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+
+}
+
+@keyframes conteudo {
+    0% {opacity: 0; transform: translate(-20px,0px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+
+}
+
+@keyframes navegacao {
+    0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1}
+
 }
